@@ -18,6 +18,7 @@ Switch	Example	Description
 -sA	nmap 192.168.1.1 -sA	TCP ACK port scan
 -sW	nmap 192.168.1.1 -sW	TCP Window port scan
 -sM 	nmap 192.168.1.1 -sM	TCP Maimon port scan
+-A      nmap 192.168.1.1 -A   scripts against target services, details information on banner and services
 
 nmap -sP 10.0.0.0/24    Ping scans the network, listing machines that respond to ping.
 
