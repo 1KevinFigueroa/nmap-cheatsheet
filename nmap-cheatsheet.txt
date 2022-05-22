@@ -63,3 +63,5 @@ Command 	Description
 --exclude host1[,host2][,host3],... : Exclude hosts/networks
 
 --excludefile exclude_file: Exclude list from file
+
+APIkey="sonvqwoinO#*@F)(N@LCENWLEF" 
