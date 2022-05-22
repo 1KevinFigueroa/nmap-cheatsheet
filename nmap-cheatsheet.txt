@@ -3,6 +3,22 @@ Nmap Command Examples
 Basic Nmap scanning examples, often used at the first stage of enumeration.
 Command 	Description
 
+Switch	Example	Description
+	nmap 192.168.1.1	Scan a single IP
+	nmap 192.168.1.1 192.168.2.1	Scan specific IPs
+ 	nmap 192.168.1.1-254 	Scan a range
+ 	nmap scanme.nmap.org 	Scan a domain
+ 	nmap 192.168.1.0/24 	Scan using CIDR notation
+-iL	nmap -iL targets.txt 	Scan targets from a file
+-iR	nmap -iR 100	Scan 100 random hosts
+
+-sS	nmap 192.168.1.1 -sS	TCP SYN port scan (Default)
+-sT 	nmap 192.168.1.1 -sT 	TCP connect port scan (Default without root privilege)
+-sU	nmap 192.168.1.1 -sU	UDP port scan
+-sA	nmap 192.168.1.1 -sA	TCP ACK port scan
+-sW	nmap 192.168.1.1 -sW	TCP Window port scan
+-sM 	nmap 192.168.1.1 -sM	TCP Maimon port scan
+
 nmap -sP 10.0.0.0/24    Ping scans the network, listing machines that respond to ping.
 
 nmap -p 1-65535 -sV -sS -T4 target    Full TCP port scan using with service version detection - usually my first scan, I find T4 more accurate than T5 and still 
